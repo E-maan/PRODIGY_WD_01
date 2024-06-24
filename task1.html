@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul id="menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myHome(this)">Home</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myAbout(this)">About</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myProducts(this)">Products</a></li>
+            <li><a onmouseover="hover(this)" onmouseout="noHover(this)" onclick="myContact(this)">Contact</a></li>
+        </ul>
+
+        <span class="openbtn" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <section id="home">
+      <h1 class="heading">Welcome to Our Website</h1>
+        <p class="para">Home section</p>
+    </section>
+
+    <section id="about">
+        <h1 class="heading">About</h1>
+        <p class="para">About section</p>
+    </section>
+
+    <section id="product">
+        <h1 class="heading">Products</h1>
+        <p class="para">Our Products</p>
+    </section>
+    
+    <section id="contact">
+        <h1 class="heading">Contact</h1>
+        <ul>
+            <li><a href="mailto:xyz@gmail.com" id="mail" onmouseover="mailOver(this)" onmouseout="mailOut(this)">Send E-mail</a></li>
+            <li>+91 1234567890</li>
+            <li>India</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p id="center">&copy; 2024 Emaan</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
